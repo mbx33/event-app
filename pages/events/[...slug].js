@@ -1,7 +1,7 @@
 import React from 'react';
 
-const FilteredEvent = () => {
-	return <div>FilteredEvent</div>;
+const FilteredEventsPage = () => {
+	return <div>FilteredEventsPage</div>;
 };
 
-export default FilteredEvent;
+export default FilteredEventsPage;

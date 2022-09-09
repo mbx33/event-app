@@ -1,12 +1,16 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import { getFeaturedEvents } from '../event-data';
+import EventList from '../components/events/EventList';
 
 //Home Page Show featured Events
 
-export default function Home() {
+const HomePage = () => {
+	const featuredEvents = getFeaturedEvents();
+
 	return (
 		<div>
-			<h1>Hello World</h1>
+			<EventList items={featuredEvents} />
 		</div>
 	);
-}
+};
+
+export default HomePage;
