@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import classes from './event-item.module.css';
+import Button from '../ui/Button';
 
 const EventItem = ({ event }) => {
 	const { title, image, date, location, id } = event;
@@ -29,7 +29,7 @@ const EventItem = ({ event }) => {
 					</div>
 				</div>
 				<div className={classes.actions}>
-					<Link href={link}>Explore Event</Link>
+					<Button link={link}>Explore Event</Button>
 				</div>
 			</div>
 		</li>
